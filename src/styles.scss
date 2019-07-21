@@ -1,1 +1,36 @@
+@import 'themes';
+
+@import '~@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /* You can add global styles to this file, and also import other style files */
+// stepper styles
+.nb-theme-default nb-stepper .header .step.completed .label-index {
+  background-color: green;
+  border: green;
+  color: #ffffff;
+}
+
+.nb-theme-default nb-stepper .header .step.completed .label{
+  color: green;
+}
+
+.nb-theme-default nb-stepper .header .connector-past{
+  color: green
+}
+
+.nb-theme-default nb-stepper .header .connector-past {
+  background-color: green;
+}
+
+.nb-theme-default nb-stepper .header .step.selected .label-index{
+  border: 2px solid orange;
+  color: orange;
+}
+
+.nb-theme-default nb-stepper .header .step.selected .label{
+  color: orange;
+}
+
